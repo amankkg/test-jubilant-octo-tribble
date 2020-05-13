@@ -1,6 +1,7 @@
 {
   "name": "test-now-deploy",
   "homepage": "https://amankkg.github.io/test-jubilant-octo-tribble",
+  "erase_this_prefix_for_gh-pages____homepage": "https://amankkg.github.io/test-jubilant-octo-tribble",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
@@ -15,6 +16,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
+    "deploy-firebase": "firebase deploy",
     "deploy-gh": "gh-pages -d build",
     "deploy-now": "now --prod",
     "preview-now": "now"
@@ -35,6 +37,7 @@
     ]
   },
   "devDependencies": {
+    "firebase-tools": "^8.2.0",
     "gh-pages": "^2.2.0",
     "now": "^19.0.1"
   }
