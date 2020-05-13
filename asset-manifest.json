@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/test-jubilant-octo-tribble/static/css/main.5f361e03.chunk.css",
+    "main.js": "/test-jubilant-octo-tribble/static/js/main.cdd33e9e.chunk.js",
+    "main.js.map": "/test-jubilant-octo-tribble/static/js/main.cdd33e9e.chunk.js.map",
+    "runtime-main.js": "/test-jubilant-octo-tribble/static/js/runtime-main.69559d9f.js",
+    "runtime-main.js.map": "/test-jubilant-octo-tribble/static/js/runtime-main.69559d9f.js.map",
+    "static/js/2.03f71503.chunk.js": "/test-jubilant-octo-tribble/static/js/2.03f71503.chunk.js",
+    "static/js/2.03f71503.chunk.js.map": "/test-jubilant-octo-tribble/static/js/2.03f71503.chunk.js.map",
+    "index.html": "/test-jubilant-octo-tribble/index.html",
+    "precache-manifest.640da3e8604637344b404c42ec0e49c0.js": "/test-jubilant-octo-tribble/precache-manifest.640da3e8604637344b404c42ec0e49c0.js",
+    "service-worker.js": "/test-jubilant-octo-tribble/service-worker.js",
+    "static/css/main.5f361e03.chunk.css.map": "/test-jubilant-octo-tribble/static/css/main.5f361e03.chunk.css.map",
+    "static/js/2.03f71503.chunk.js.LICENSE.txt": "/test-jubilant-octo-tribble/static/js/2.03f71503.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/test-jubilant-octo-tribble/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.69559d9f.js",
+    "static/js/2.03f71503.chunk.js",
+    "static/css/main.5f361e03.chunk.css",
+    "static/js/main.cdd33e9e.chunk.js"
+  ]
+}
