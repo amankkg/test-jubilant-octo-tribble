@@ -1,6 +1,6 @@
 {
   "name": "test-now-deploy",
-  "homepage": "https://amankkg.github.io/test-jubilant-octo-tribble",
+  "proxy": "https://test-jubilant-octo-tribble-api.herokuapp.com/",
   "erase_this_prefix_for_gh-pages____homepage": "https://amankkg.github.io/test-jubilant-octo-tribble",
   "private": true,
   "dependencies": {

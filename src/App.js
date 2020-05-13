@@ -1,14 +1,50 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, {useState} from 'react'
+import logo from './logo.svg'
+import './App.css'
 
 function App() {
+  const [fetching, setFetching] = useState(false)
+  const [echoIn, setEchoIn] = useState('')
+  const appLogoClass = fetching ? 'App-logo App-logo-spin' : 'App-logo'
+
+  const onHello = () => {
+    setFetching(true)
+
+    fetch(process.env.REACT_APP_API + '/api')
+      .then((resp) => resp.text())
+      .then((resp) => {
+        setFetching(false)
+        alert(resp)
+      })
+  }
+
+  const onEcho = () => {
+    setFetching(true)
+
+    fetch(process.env.REACT_APP_API + '/api/echo', {
+      method: 'post',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({message: echoIn}),
+    })
+      .then((resp) => resp.json())
+      .then((resp) => {
+        setFetching(false)
+        alert(resp)
+      })
+  }
+
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <img src={logo} className={appLogoClass} alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          <button onClick={onHello}>fetch /api</button>
+        </p>
+        <p>
+          <label>
+            Echo <input onChange={(e) => setEchoIn(e.currentTarget.value)} />
+          </label>{' '}
+          <button onClick={onEcho}>fetch /api/echo</button>
         </p>
         <a
           className="App-link"
@@ -16,11 +52,11 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn Now.sh deployment
+          Learn React deployment options
         </a>
       </header>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
