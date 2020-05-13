@@ -1,6 +1,6 @@
 {
   "name": "test-now-deploy",
-  "version": "0.1.0",
+  "homepage": "https://amankkg.github.io/test-jubilant-octo-tribble",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
@@ -15,8 +15,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "deploy": "now --prod",
-    "preview": "now"
+    "deploy-gh": "gh-pages -d build",
+    "deploy-now": "now --prod",
+    "preview-now": "now"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -34,6 +35,7 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^2.2.0",
     "now": "^19.0.1"
   }
 }
